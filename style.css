@@ -710,6 +710,220 @@ footer a:hover {
   z-index: -9;
 }
 /* end Blog Page */
+
+/* About Page */
+#page-header.about-page {
+  background-image: url("img/banner/b20.jpg");
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 50%;
+  flex: 1;
+  height: auto;
+}
+
+#about-head div {
+  flex: 1;
+  padding-left: 40px;
+}
+/* end About Page */
+
+/* Contact Page */
+.details ul {
+  list-style: none;
+}
+
+.details ul li {
+  display: flex;
+  margin: 20px 0;
+}
+
+.details ul li p {
+  margin: 0 0 0 20px;
+}
+
+#contact-details {
+  display: flex;
+}
+
+#contact-details .details {
+  flex: 1;
+}
+
+#contact-details .map {
+  flex: 1;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-contact {
+  display: flex;
+}
+
+#form-contact form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+#form-contact form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#form-contact form input,
+#form-contact form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-contact form button {
+  background-color: #088178;
+  color: #fff;
+  padding: 20px;
+}
+
+#form-contact .people div {
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+#form-contact .people div img {
+  width: 65px;
+  height: 75px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#cart {
+  overflow-x: auto;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  /* table-layout: fixed; bo cai nay de no' slide duoc khi width rat nho*/
+  white-space: nowrap;
+}
+
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 1px solid #e2e2e2;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead th {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupon {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupon h3 {
+  padding-bottom: 15px;
+}
+
+#coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupon button,
+#subtotal button {
+  background-color: #088178;
+  color: white;
+  padding: 12px 20px;
+}
+
+#subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#subtotal h3 {
+  padding-bottom: 15px;
+}
 @media screen and (max-width: 799px) {
   #navbar {
     display: flex;
@@ -838,6 +1052,37 @@ footer a:hover {
   #blog .blog-details {
     width: 100%;
   }
+
+  /* contact page */
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #form-contact {
+    flex-direction: column;
+  }
+
+  #form-contact form {
+    width: 90%;
+  }
+
+  .people {
+    padding-top: 30px;
+  }
+
+  /* Cart Page */
+  #cart-add {
+    flex-direction: column;
+  }
+
+  #coupon,
+  #subtotal {
+    width: 100%;
+  }
+
+  #subtotal {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -922,5 +1167,20 @@ footer a:hover {
   #blog .blog-img,
   #blog .blog-details {
     width: 100%;
+  }
+
+  /* About Page */
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    /* flex: 1; */
+    padding-left: 0px;
   }
 }
